@@ -1,6 +1,5 @@
 
 
-
 import Header from './Header.jsx'
 
 
@@ -21,12 +20,20 @@ function Footer() {
   return <p>&copy; {year} Hexaxolotl</p>
 }
 
+function GitHubLink() {
+let url = "http://github.com/Hexaxolotl"
+let label = "My Github"
+return <a href={url}>{label}</a>
+}
+
+
 function App() {
   return (
     <div>
       <Header />
       <p>Pokémon trainer from Pallet Town.</p>
       <Fortune />
+      <GitHubLink />
     <Footer />
     </div>
   )
