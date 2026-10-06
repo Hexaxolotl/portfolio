@@ -1,0 +1,4 @@
+const imageUrl = (width, height)=>
+    "https://plus.unsplash.com/premium_photo-1685086785054-d047cdc0e525?w =" + width + "&h=" + height + "&fit=crop&auto=format"
+
+export default imageUrl

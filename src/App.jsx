@@ -1,11 +1,11 @@
-
-
 import Header from './Header.jsx'
 import About from './About.jsx'
 import Greeting from './Greeting.jsx'
 import SignuppagePortfolioCard from './SignuppagePortfolioCard.jsx'
 import DataPlaylistPortfolioCard from './DataPlaylistPortfolioCard.jsx'
 import PokedexPortfolioCard from './PokedexPortfolioCard.jsx'
+import hero from './hero.css'
+
 
 function randomNumer(min, max){
   return Math.floor(Math.random() * (max - min + 1) + min)
@@ -36,6 +36,7 @@ function App() {
     <div className="container">
       <Greeting />
       <Header />
+      <Hero />
       <About />
       <br></br><p>A Pokémon trainer from Pallet Town.</p> <br></br>
       <p> Today's Fortune:</p>
