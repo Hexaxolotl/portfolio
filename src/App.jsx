@@ -30,7 +30,7 @@ return <a href={url}>{label}</a>
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Greeting />
       <Header />
       <About />
