@@ -2,6 +2,7 @@
 
 import Header from './Header.jsx'
 import About from './About.jsx'
+import Greeting from './Greeting.jsx'
 
 function randomNumer(min, max){
   return Math.floor(Math.random() * (max - min + 1) + min)
@@ -30,8 +31,11 @@ return <a href={url}>{label}</a>
 function App() {
   return (
     <div>
+      <Greeting />
       <Header />
-      <p>Pokémon trainer from Pallet Town.</p>
+      <About />
+      <br></br><p>A Pokémon trainer from Pallet Town.</p> <br></br>
+      <p> Today's Fortune:</p>
       <Fortune />
       <GitHubLink />
     <Footer />
