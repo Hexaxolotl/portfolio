@@ -3,6 +3,8 @@
 import Header from './Header.jsx'
 import About from './About.jsx'
 import Greeting from './Greeting.jsx'
+import SignuppagePortfolioCard from './SignuppagePortfolioCard.jsx'
+import DataPlaylistPortfolioCard from './DataPlaylistPortfolioCard.jsx'
 
 function randomNumer(min, max){
   return Math.floor(Math.random() * (max - min + 1) + min)
@@ -38,6 +40,14 @@ function App() {
       <p> Today's Fortune:</p>
       <Fortune />
       <GitHubLink />
+      <p>Check out my projects below!</p>
+      <SignuppagePortfolioCard />
+      <DataPlaylistPortfolioCard />
+      <br></br>
+      <p>👨🏻‍💻🛠️More projects coming soon!🛠️👨🏻‍💻</p>
+      <br></br>
+      <p>Thanks for visiting my portfolio!</p>
+      <br></br>
     <Footer />
     </div>
   )
