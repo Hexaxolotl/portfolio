@@ -1,6 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import '@picocss/pico/css/pico.min.css'
+import '@picocss/pico/css/pico.colors.min.css'
+import './card-variations.css'
 import 'animate.css'
 import App from './App.jsx'
 

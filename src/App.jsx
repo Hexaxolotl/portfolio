@@ -43,9 +43,9 @@ function App() {
       <GitHubLink />
       <p>Check out my projects below!</p>
       <div className="grid">
-        <SignuppagePortfolioCard />
-        <DataPlaylistPortfolioCard />
-        <PokedexPortfolioCard />
+        <article className="card-jade"><SignuppagePortfolioCard /></article>
+        <article className="card-azure"><DataPlaylistPortfolioCard /></article>
+        <article className="card-pumpkin"><PokedexPortfolioCard /></article>
       </div>
       <br></br>
       <p>👨🏻‍💻🛠️More projects in the making!🛠️👨🏻‍💻</p>
