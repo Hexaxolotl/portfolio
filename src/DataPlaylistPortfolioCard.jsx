@@ -1,0 +1,17 @@
+function DataPlaylistPortfolioCard() {
+  let name = "Data Playlist"
+  let description = "A playlist page that loads its songs from my own data API."
+  let liveUrl = "https://hexaxolotl.github.io/data-playlist/"
+  let repoUrl = "https://github.com/Hexaxolotl/REPO"
+  return (
+    <article>
+      <h2>{name}</h2>
+      <p>{description}</p>
+      <p>
+        <a href={liveUrl} role="button">See it live</a> · <a href={repoUrl} role="button">Read the code</a>
+      </p>
+    </article>
+  )
+}
+
+export default DataPlaylistPortfolioCard
