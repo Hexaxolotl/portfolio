@@ -5,23 +5,11 @@ import SignuppagePortfolioCard from './SignuppagePortfolioCard.jsx'
 import DataPlaylistPortfolioCard from './DataPlaylistPortfolioCard.jsx'
 import PokedexPortfolioCard from './PokedexPortfolioCard.jsx'
 import Fortune from './Fortune.jsx'
-
+import Footer from './Footer.jsx'
+import GitHubLink from './Githublink.jsx'
 
 function randomNumer(min, max){
   return Math.floor(Math.random() * (max - min + 1) + min)
-}
-
-
-
-function Footer() {
-  let year = new Date().getFullYear()
-  return <p>&copy; {year} Hexaxolotl</p>
-}
-
-function GitHubLink() {
-let url = "http://github.com/Hexaxolotl"
-let label = "My Github"
-return <a href={url}>{label}</a>
 }
 
 
