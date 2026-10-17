@@ -7,10 +7,7 @@ import PokedexPortfolioCard from './PokedexPortfolioCard.jsx'
 import Fortune from './Fortune.jsx'
 import Footer from './Footer.jsx'
 import GitHubLink from './Githublink.jsx'
-
-function randomNumer(min, max){
-  return Math.floor(Math.random() * (max - min + 1) + min)
-}
+import Hero from './Hero.jsx'
 
 
 function App() {
@@ -18,6 +15,7 @@ function App() {
     <div className="container">
       <Greeting />
       <Header />
+      <Hero/>
       <About />
       <br></br><p>A Pokémon trainer from Pallet Town.</p> <br></br>
       <p> Today's Fortune:</p>
