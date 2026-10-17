@@ -24,7 +24,8 @@ function Hero() {
         <img src={S} alt={A}/>
       </div>
       <p>
-        <button onClick={showColor}>Color</button>
+        <button onClick={showColor}>Color</button> 
+        &nbsp;
         <button onClick={showBlackAndWhite}>Black and white</button>
       </p>
     </div> 

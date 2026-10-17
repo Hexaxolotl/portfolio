@@ -9,10 +9,6 @@ import Footer from './Footer.jsx'
 import GitHubLink from './Githublink.jsx'
 import Hero from './Hero.jsx'
 
-function randomNumer(min, max){
-  return Math.floor(Math.random() * (max - min + 1) + min)
-}
-
 
 function App() {
   return (
