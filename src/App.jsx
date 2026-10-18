@@ -9,6 +9,8 @@ import Footer from './Footer.jsx'
 import GitHubLink from './Githublink.jsx'
 import Hero from './Hero.jsx'
 import ClickLabPortfoiloCard from './ClickLabPortfoiloCard.jsx'
+import FeedTheBeast from './FeedTheBeast.jsx'
+
 
 function App() {
   return (
@@ -24,9 +26,10 @@ function App() {
       <p>Check out my projects below!</p>
       <div className="grid">
         <article className="card-jade"><SignuppagePortfolioCard /></article>
-        <article className="card-azure"><DataPlaylistPortfolioCard /></article>
-        <article className="card-pumpkin"><PokedexPortfolioCard /></article>
-        <article className="card-emerald"><ClickLabPortfoiloCard /></article>
+        <article className="card-jade"><DataPlaylistPortfolioCard /></article>
+        <article className="card-jade"><PokedexPortfolioCard /></article>
+        <article className="card-jade"><ClickLabPortfoiloCard /></article>
+        <article className="card-jade"><FeedTheBeast /></article>
       </div>
       <br></br>
       <p>👨🏻‍💻🛠️More projects in the making!🛠️👨🏻‍💻</p>

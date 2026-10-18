@@ -16,4 +16,6 @@ const heroPhoto = (width, height, sat, description) => {
   return [src, alt]
 }
 
+
+
 export default heroPhoto
