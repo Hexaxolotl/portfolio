@@ -7,10 +7,9 @@ import PokedexPortfolioCard from './PokedexPortfolioCard.jsx'
 import Fortune from './Fortune.jsx'
 import Footer from './Footer.jsx'
 import GitHubLink from './Githublink.jsx'
-
-function randomNumer(min, max){
-  return Math.floor(Math.random() * (max - min + 1) + min)
-}
+import Hero from './Hero.jsx'
+import ClickLabPortfoiloCard from './ClickLabPortfoiloCard.jsx'
+import FeedTheBeast from './FeedTheBeast.jsx'
 
 
 function App() {
@@ -18,6 +17,7 @@ function App() {
     <div className="container">
       <Greeting />
       <Header />
+      <Hero/>
       <About />
       <br></br><p>A Pokémon trainer from Pallet Town.</p> <br></br>
       <p> Today's Fortune:</p>
@@ -26,8 +26,10 @@ function App() {
       <p>Check out my projects below!</p>
       <div className="grid">
         <article className="card-jade"><SignuppagePortfolioCard /></article>
-        <article className="card-azure"><DataPlaylistPortfolioCard /></article>
-        <article className="card-pumpkin"><PokedexPortfolioCard /></article>
+        <article className="card-jade"><DataPlaylistPortfolioCard /></article>
+        <article className="card-jade"><PokedexPortfolioCard /></article>
+        <article className="card-jade"><ClickLabPortfoiloCard /></article>
+        <article className="card-jade"><FeedTheBeast /></article>
       </div>
       <br></br>
       <p>👨🏻‍💻🛠️More projects in the making!🛠️👨🏻‍💻</p>
