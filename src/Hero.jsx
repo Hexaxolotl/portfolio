@@ -18,6 +18,7 @@ function Hero() {
 
   const [sat, setSat]=useState(0)
   const [index, setIndex] = useState(0)
+  const [blur, setBlur] = useState(0)
 
   const showColor = ()=>{
     setSat(0)
@@ -39,23 +40,32 @@ const previousPhoto = () => {
   }
 }
 
-
   const showBlackAndWhite =()=>{
     setSat(-100)
   }
 
   const [S, A] = heroPhoto(photos[index],500,500, sat, description[index])
- 
+
+
+  const moreBlur = ()=>{
+    setBlur = (blur + 100)
+  }
+    const removeBlur = () => {
+    setBlur(0)
+  }
+  
   return (
     <div>
       <div className="hero">
-        <img src={S} alt={A}/>
+        <img src={S + "&blur=" + blur} alt={A}/>
       </div>
       <p className="hero-buttons">
         <button onClick={previousPhoto}>Previous</button>
         <button onClick={nextPhoto}>Next</button>
         <button onClick={showColor}>Color</button>
         <button onClick={showBlackAndWhite}>Black and white</button>
+        <button onClick={moreBlur}>More Blur</button>
+
       </p>
     </div> 
 )
