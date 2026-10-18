@@ -20,9 +20,6 @@ function Hero() {
   const [index, setIndex] = useState(0)
   const [blur, setBlur] = useState(0)
 
-  const showColor = ()=>{
-    setSat(0)
-  }
 
   const nextPhoto = () => {
   if (index === photos.length - 1) {
@@ -32,13 +29,17 @@ function Hero() {
   }
 }
 
-const previousPhoto = () => {
+  const previousPhoto = () => {
   if (index === 0) {
     setIndex(photos.length - 1)
   } else {
     setIndex(index - 1)
   }
 }
+
+  const showColor = ()=>{
+    setSat(0)
+  }
 
   const showBlackAndWhite =()=>{
     setSat(-100)
