@@ -8,7 +8,7 @@ import Fortune from './Fortune.jsx'
 import Footer from './Footer.jsx'
 import GitHubLink from './Githublink.jsx'
 import Hero from './Hero.jsx'
-
+import ClickLabPortfoiloCard from './ClickLabPortfoiloCard.jsx'
 
 function App() {
   return (
@@ -26,6 +26,7 @@ function App() {
         <article className="card-jade"><SignuppagePortfolioCard /></article>
         <article className="card-azure"><DataPlaylistPortfolioCard /></article>
         <article className="card-pumpkin"><PokedexPortfolioCard /></article>
+        <article className="card-emerald"><ClickLabPortfoiloCard /></article>
       </div>
       <br></br>
       <p>👨🏻‍💻🛠️More projects in the making!🛠️👨🏻‍💻</p>
