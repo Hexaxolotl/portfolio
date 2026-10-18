@@ -17,16 +17,34 @@ function Hero() {
   ]
 
   const [sat, setSat]=useState(0)
-  
+  const [index, setIndex] = useState(0)
+
   const showColor = ()=>{
     setSat(0)
   }
+
+  const nextPhoto = () => {
+  if (index === photos.length - 1) {
+    setIndex(0)
+  } else {
+    setIndex(index + 1)
+  }
+}
+
+const previousPhoto = () => {
+  if (index === 0) {
+    setIndex(photos.length - 1)
+  } else {
+    setIndex(index - 1)
+  }
+}
+
 
   const showBlackAndWhite =()=>{
     setSat(-100)
   }
 
-  const [S, A] = heroPhoto(photos[0],500,500, sat, description[0])
+  const [S, A] = heroPhoto(photos[index],500,500, sat, description[index])
  
   return (
     <div>
@@ -34,6 +52,8 @@ function Hero() {
         <img src={S} alt={A}/>
       </div>
       <p className="hero-buttons">
+        <button onClick={previousPhoto}>Previous</button>
+        <button onClick={nextPhoto}>Next</button>
         <button onClick={showColor}>Color</button>
         <button onClick={showBlackAndWhite}>Black and white</button>
       </p>
