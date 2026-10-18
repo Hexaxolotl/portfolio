@@ -22,9 +22,8 @@ function Hero() {
       <div className="hero">
         <img src={S} alt={A}/>
       </div>
-      <p>
-        <button onClick={showColor}>Color</button> 
-        &nbsp;
+      <p className="hero-buttons">
+        <button onClick={showColor}>Color</button>
         <button onClick={showBlackAndWhite}>Black and white</button>
       </p>
     </div> 
