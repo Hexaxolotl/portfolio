@@ -1,8 +1,7 @@
 import {useState} from 'react'
-import imageUrl from './image-url.js'
 import './hero.css'
 import heroPhoto from './hero-photo.js'
-
+//import imageUrl from './image-url.js'
 function Hero() {
   
   
@@ -16,7 +15,7 @@ function Hero() {
     setSat(-100)
   }
 
-  const [S, A]= heroPhoto(1200,500, 0,"hello world")
+  const [S, A]= heroPhoto(500,500, 0,"hello world")
 
   return (
     <div>
