@@ -1,7 +1,6 @@
 import {useState} from 'react'
 
 
-
 function ClickLabPortfoiloCard(){
     let name = "Click Lab"
     let description = "I made a small quiz about human bodies. If you answer correctly there will be a sound, and the score goes up by one."
