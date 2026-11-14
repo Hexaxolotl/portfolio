@@ -24,7 +24,7 @@ const projects = [
     details: "My level 2 capstone project. I choose to build a pokedex that loads its data from the PokeAPI.",
     liveUrl: "https://Hexaxolotl.github.io/capstone-level-2/",
     repoUrl: "https://github.com/Hexaxolotl/capstone-level-2",
-    status: "live",
+    status: "in progress",
   },
   {
     name: "Click Lab",

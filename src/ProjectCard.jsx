@@ -26,6 +26,7 @@ function ProjectCard({project}) {
   return (
     <article>
       <h2>{project.name}</h2>
+      <p>This Project is: {project.status} </p>
       <p>{text}</p>
       <button onClick={toggleOpen}>{label}</button>
       <p>
