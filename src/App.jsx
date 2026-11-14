@@ -1,15 +1,12 @@
 import Header from './Header.jsx'
 import About from './About.jsx'
 import Greeting from './Greeting.jsx'
-import SignuppagePortfolioCard from './SignuppagePortfolioCard.jsx'
-import DataPlaylistPortfolioCard from './DataPlaylistPortfolioCard.jsx'
-import PokedexPortfolioCard from './PokedexPortfolioCard.jsx'
 import Fortune from './Fortune.jsx'
 import Footer from './Footer.jsx'
 import GitHubLink from './Githublink.jsx'
 import Hero from './Hero.jsx'
-import ClickLabPortfoiloCard from './ClickLabPortfoiloCard.jsx'
-import FeedTheBeast from './FeedTheBeast.jsx'
+import ProjectCard from './ProjectCard.jsx'
+import projects from './projects.js'
 
 
 function App() {
@@ -25,11 +22,11 @@ function App() {
       <GitHubLink />
       <p>Check out my projects below!</p>
       <div className="grid">
-        <article className="card-jade"><SignuppagePortfolioCard /></article>
-        <article className="card-jade"><DataPlaylistPortfolioCard /></article>
-        <article className="card-jade"><PokedexPortfolioCard /></article>
-        <article className="card-jade"><ClickLabPortfoiloCard /></article>
-        <article className="card-jade"><FeedTheBeast /></article>
+        <article className="card-jade"><ProjectCard project={projects[0]}/></article>
+        <article className="card-jade"><ProjectCard project={projects[1]}/></article>
+        <article className="card-jade"><ProjectCard project={projects[2]}/></article>
+        <article className="card-jade"><ProjectCard project={projects[3]}/></article>
+        <article className="card-jade"><ProjectCard project={projects[4]}/></article>
       </div>
       <br></br>
       <p>👨🏻‍💻🛠️More projects in the making!🛠️👨🏻‍💻</p>
