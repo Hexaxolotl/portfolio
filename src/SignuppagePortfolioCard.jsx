@@ -1,4 +1,5 @@
 import {useState} from 'react'
+/*grabs React's state hook so this card can track data that changes when a user interacts with it.*/
 
 function SignuppagePortfolioCard() {
   let name = "Odyssey Tavern"
@@ -8,7 +9,7 @@ function SignuppagePortfolioCard() {
   const [likes, setLike] = useState(0)
 
   const addLike = ()=>{
-    setLike(likes + 1)
+    setLike(likes + 1) /* this is a function that updates the likes state */
   }
   
   return (
