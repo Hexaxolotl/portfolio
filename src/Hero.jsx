@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import './hero.css'
 import heroPhoto from './hero-photo.js'
-
+import PhotoControls from './PhotoControls.jsx'
 
 
 function Hero() {
@@ -60,14 +60,14 @@ const previousPhoto = () => {
       <div className="hero">
         <img src={S + "&blur=" + blur} alt={A}/>
       </div>
-      <p className="hero-buttons">
-        <button onClick={previousPhoto}>Previous</button>
-        <button onClick={nextPhoto}>Next</button>
-        <button onClick={showColor}>Color</button>
-        <button onClick={showBlackAndWhite}>Black and white</button>
-        <button onClick={moreBlur}>More Blur</button>
-        <button onClick={removeBlur}>Remove Blur</button>
-      </p>
+        <PhotoControls 
+        onNextPhoto={nextPhoto}
+        onPreviousPhoto={previousPhoto}
+        onShowBlackAndWhite={showBlackAndWhite}
+        onShowColor={showColor}
+        onMoreBlur={moreBlur}
+        onRemoveBlur={removeBlur}
+       />
     </div> 
 )
 }
