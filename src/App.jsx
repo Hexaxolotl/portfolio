@@ -23,11 +23,11 @@ function App() {
       <p>Check out my projects below!</p>
       <div className="grid">
         <Section title="Projects">
-          <article className="card-jade"><ProjectCard project={projects[0]}/></article>
-          <article className="card-jade"><ProjectCard project={projects[1]}/></article>
-          <article className="card-jade"><ProjectCard project={projects[2]}/></article>
-          <article className="card-jade"><ProjectCard project={projects[3]}/></article>
-          <article className="card-jade"><ProjectCard project={projects[4]}/></article>
+          {projects.map((project) => (
+       <article className="card-jade" key={project.name}>
+         <ProjectCard project={project} />
+       </article>
+         ))}
         </Section>
       </div>
       <br></br>
